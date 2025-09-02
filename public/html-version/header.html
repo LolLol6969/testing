@@ -1,0 +1,64 @@
+Completely redesigned header with modern glassmorphism navbar 
+<header class="main-header">
+    <div class="container">
+        <nav class="glass-navbar">
+            <div class="navbar-content">
+                 Removed red logo icon completely, keeping only text 
+                <a href="index.html" class="brand-logo">
+                    <span class="logo-text">Elysian Sands</span>
+                </a>
+
+                 Removed all emoji icons from desktop navigation 
+                <div class="desktop-nav">
+                    <a href="index.html" class="nav-item active">
+                        <span>Home</span>
+                    </a>
+                    <a href="suite.html" class="nav-item">
+                        <span>Suite</span>
+                    </a>
+                    <a href="esperienze.html" class="nav-item">
+                        <span>Esperienze</span>
+                    </a>
+                    <a href="contatti.html" class="nav-item">
+                        <span>Contatti</span>
+                    </a>
+                </div>
+
+                 Modern hamburger menu button with animation 
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle mobile menu">
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                </button>
+            </div>
+        </nav>
+    </div>
+
+     Redesigned mobile menu with better animations and styling 
+    <div class="mobile-menu-overlay" onclick="closeMobileMenu()">
+        <div class="mobile-menu-panel" onclick="event.stopPropagation()">
+            <div class="mobile-menu-header">
+                <h3>Menu</h3>
+                <div class="menu-divider"></div>
+            </div>
+             Removed all emoji icons from mobile navigation 
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav-item active" onclick="closeMobileMenu()">
+                    <span>Home</span>
+                    <div class="active-indicator"></div>
+                </a>
+                <a href="suite.html" class="mobile-nav-item" onclick="closeMobileMenu()">
+                    <span>Suite</span>
+                </a>
+                <a href="esperienze.html" class="mobile-nav-item" onclick="closeMobileMenu()">
+                    <span>Esperienze</span>
+                </a>
+                <a href="contatti.html" class="mobile-nav-item" onclick="closeMobileMenu()">
+                    <span>Contatti</span>
+                </a>
+            </nav>
+        </div>
+    </div>
+</header>
