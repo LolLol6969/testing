@@ -184,7 +184,7 @@
 
 /* Added background image styles */
 .beach-background {
-  background-image: url("public/images/beach-background.png");
+  background-image: url("/images/beach-background.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
